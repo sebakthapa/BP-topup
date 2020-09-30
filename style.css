@@ -1,0 +1,135 @@
+
+body{
+	background: hsl(0, 0%, 94%);
+}
+
+
+.navbar-logo{
+	margin-right: 5%;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.nav-link{
+	margin: 2px 8px;
+}
+
+
+.carousel img{
+	height: 70vh;
+}
+
+.carousel-container{
+ 	margin-top: 1px;
+ }
+
+.form-control{
+	font-size: 1.2rem;
+ 	text-transform: capitalize;
+
+}
+
+.form-control::placeholder{
+	font-size: 1rem;
+	-webkit-opacity: 0.6;
+	-o-opacity: 0.5;
+
+}
+
+.contact-form,
+.freefire-topup-form{
+	border-radius: 1%;
+	margin-top: 1%;
+	background: hsl(0, 0%, 88%);
+	padding: 2% 4%;
+}
+
+.about {
+	font-size: 1.2rem;
+}
+
+/* .hide-password{
+	font-size: 5px;
+	font-weight:bold ;
+	letter-spacing: 4px;
+} */
+
+
+/* .landing-text h1{
+	font-size: 4rem;
+} */
+
+
+
+@keyframes fadein {
+	from{opacity: 0}
+	to{opacity:1;}
+	
+}
+@keyframes fadeout {
+	from{opacity: 1}
+	to{opacity:0;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1352px) {
+
+.navbar-logo{
+	margin-right: 3%;
+	font-size: 1.7rem;
+}
+
+.nav-link{
+	margin: 1px 3px;
+}
+
+}
+
+
+@media (max-width: 1037px) and (min-width: 992px) {
+
+.navbar-logo{
+	margin-right: 3%;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.nav-link{
+	font-size: .95rem;
+	margin: 2px 3px;
+}
+
+@media (max-width: 992px) {
+
+
+
+@media(max-width: 992px) {
+	
+.carousel img{
+	height: 60vh;
+}
+}
+
+
